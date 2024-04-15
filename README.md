@@ -22,7 +22,17 @@ This README provides a detailed explanation of an Academic Management System imp
 
 ## 1. Introduction
 
-The Academic Management System implemented in Java allows for the management of academic-related entities through a command-line interface. It leverages the MVC design pattern to separate concerns and achieve modularity.
+The Academic Management System implemented in Java allows for the management of academic-related entities through a command-line interface. It leverages the Model-View-Controller (MVC) design pattern to separate concerns and achieve modularity.
+
+In the MVC pattern:
+
+Model: Represents the data and business logic of the application. This includes classes like Course, Student, Enrollment, Lecturer, etc., which encapsulate the core functionality and data operations.
+
+View: Handles the presentation layer and user interface. Although this system primarily uses a command-line interface (Driver1), it still separates the user interaction (View) from the underlying operations (Model).
+
+Controller: Acts as an intermediary between the Model and View. In this system, the Controller class processes user input, delegates tasks to the appropriate Model classes (such as adding courses, students, etc.), and manages the overall flow of the application.
+
+The MVC architecture promotes maintainability and scalability by organizing code into distinct components, enabling easier updates and enhancements. This separation of concerns ensures that modifications in one part of the system (e.g., adding new features) can be implemented without affecting others.
 
 ## 2. Key Concepts
 
@@ -75,7 +85,7 @@ A test case example is provided to demonstrate the usage of the system with spec
 
 #input:
 
-lecturer-add#0130058501#Parmonangan Rotua Togatorop#PAT#mona.togatorop@del.ac.id#Information Systems
+- lecturer-add#0130058501#Parmonangan Rotua Togatorop#PAT#mona.togatorop@del.ac.id#Information Systems
 lecturer-add#0114129002#Iustisia Natalia Simbolon#IUS#iustisia.simbolon@del.ac.id#Informatics
 lecturer-add#0124108201#Rosni Lumbantoruan#RSL#rosni@del.ac.id#Information Systems
 course-add#12S1101#Dasar Sistem Informasi#3#D
