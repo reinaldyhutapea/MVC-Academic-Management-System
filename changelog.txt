@@ -1,0 +1,2 @@
+memastikan adanya sorting untuk semester, perubahan output dengan penambahan data dari opening, course dan email
+menambah data previous grade ke output
